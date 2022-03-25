@@ -1,0 +1,30 @@
+{
+  "name": "nan-blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
+    "start": "pm2 start npm -- run docs:dev"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@vue/component-compiler-utils": "^3.2.2",
+    "@vuepress/plugin-active-header-links": "^1.8.2",
+    "@vuepress/shared-utils": "^1.8.2",
+    "async-validator": "^1.11.5",
+    "element-ui": "^2.15.6",
+    "markdown-it": "^8.4.2",
+    "markdown-it-container": "^2.0.0",
+    "vue-template-compiler": "^2.6.14",
+    "vuepress": "^1.9.5",
+    "vuepress-plugin-container": "^2.1.5",
+    "vuepress-plugin-permalink-pinyin": "^1.0.0",
+    "vuepress-theme-reco": "^1.6.10"
+  },
+  "dependencies": {
+    "pm2": "^5.2.0"
+  }
+}
