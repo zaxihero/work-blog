@@ -8,5 +8,5 @@ bgImageStyle: {
 }
 isShowTitleInHome: true
 heroText: 🎃工作笔记
-tagline: 爱笑的人运气不会差~
+tagline: 爱做笔记的人效率不会差~
 ---
