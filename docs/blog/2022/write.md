@@ -5,6 +5,54 @@ tags:
  - 技巧
 ---
 
+## 新建页面
+:::: tabs
+::: tab label=新建博客
+* 博客不需要左侧目录，直接写就行，写好顶部的`font-matter`就能找到
+>blog/2022/yuandan.md
+```md{1-8}
+---
+title: 元旦
+date: 2022-01-01
+tags:
+ - 生活
+categories:
+ - 个人日记
+---
+
+## 早上
+* 早上我们去吃饭了
+## 中午
+* 中午我敲了这行代码
+```
+<img src="./assets/yuandanxiaoguo.png" style="width:800px;">
+
+:::
+::: tab label=需要目录的知识点
+* 如果需要弄一个有目录的知识点，就需要配置
+>.vuepress/sidebar.js
+```js{8}
+const net = {
+    '/net/': [
+        {
+            title: '网络相关',
+            collapsable: false,
+            children: [
+                '',
+                'route',
+            ]
+        },
+
+    ],
+}
+```
+<img src="./assets/xinjian.png" style="width:600px;">
+
+* 效果
+<img src="./assets/mulu.png" style="width:800px;">
+:::
+::::
+
 ## markdown语法
 
 首先文档支持所有的markdown语法，包括各级标题、音视频解析、段落、列表、区块、代码、连接、表格，以及一些高级的编写技巧。
@@ -173,55 +221,6 @@ code
 :::
 
 ::::
-
-## 新建页面
-:::: tabs
-::: tab label=新建博客
-* 博客不需要左侧目录，直接写就行，写好顶部的`font-matter`就能找到
->blog/2022/yuandan.md
-```md{1-8}
----
-title: 元旦
-date: 2022-01-01
-tags:
- - 生活
-categories:
- - 个人日记
----
-
-## 早上
-* 早上我们去吃饭了
-## 中午
-* 中午我敲了这行代码
-```
-<img src="./assets/yuandanxiaoguo.png" style="width:800px;">
-
-:::
-::: tab label=需要目录的知识点
-* 如果需要弄一个有目录的知识点，就需要配置
->.vuepress/sidebar.js
-```js{8}
-const net = {
-    '/net/': [
-        {
-            title: '网络相关',
-            collapsable: false,
-            children: [
-                '',
-                'route',
-            ]
-        },
-
-    ],
-}
-```
-<img src="./assets/xinjian.png" style="width:600px;">
-
-* 效果
-<img src="./assets/mulu.png" style="width:800px;">
-:::
-::::
-
 ## 已支持插件
 ### tip
 ```md
