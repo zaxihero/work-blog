@@ -6,7 +6,7 @@
   "scripts": {
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
-    "start": "pm2 start npm -- run docs:dev"
+    "start": "pm2 start npm -- run docs:dev --name blog"
   },
   "author": "",
   "license": "ISC",

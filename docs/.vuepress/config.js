@@ -77,6 +77,6 @@ module.exports = {
                 after: '</div>',
             },
         ],
-        require('./components/index.js')
+        require('./plugins/index.js')
     ],
 }
