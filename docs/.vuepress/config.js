@@ -1,5 +1,6 @@
 module.exports = {
-    title: '西瓜皮儿',
+    title: '李大王',
+    base: "/work-blog/",
     theme: 'reco',
     port: 8089,
     head: [
@@ -8,7 +9,7 @@ module.exports = {
     ],
     themeConfig: {
         type: 'blog',
-        author: '西瓜皮儿',
+        author: '李大王',
         startYear: '2022',
         authorAvatar: '/assets/portrait.jpg',
         modePicker: false,
@@ -54,29 +55,5 @@ module.exports = {
         lineNumbers: true
     },
 
-    plugins: [
-        [
-            'permalink-pinyin',
-            {
-                lowercase: true,
-                separator: '-'
-            }
-        ],
-        [
-            'vuepress-plugin-container',
-            {
-                type: 'right',
-                defaultTitle: '',
-            },
-        ],
-        [
-            'vuepress-plugin-container',
-            {
-                type: 'theorem',
-                before: info => `<div class="theorem"><p class="title">${info}</p>`,
-                after: '</div>',
-            },
-        ],
-        require('./plugins/index.js')
-    ],
+    plugins: require('./plugins/index.js'),
 }

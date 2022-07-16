@@ -27,16 +27,5 @@
     "build": "vuepress build docs",
     "start": "pm2 start npm -- run docs:dev --name blog",
     "stop": "pm2 stop ecosystem.config.js"
-  },
-  "author": "coderHdy",
-  "license": "ISC",
-  "description": "前端西瓜皮儿~",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/coderHDY/myblog.git"
-  },
-  "bugs": {
-    "url": "https://github.com/coderHDY/myblog/issues"
-  },
-  "homepage": "https://github.com/coderHDY/myblog#readme"
+  }
 }
